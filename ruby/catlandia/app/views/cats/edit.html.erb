@@ -1,0 +1,14 @@
+
+<nav>
+  <ul>
+    <li><%= link_to 'Home', cats_path %></li>
+    <li><%= link_to 'Breeds', cats_breed_path %></li>
+    <li><%= link_to 'Add Kitty', new_cat_path %></li>
+  </ul>
+</nav>
+
+<h1>Editing Cat</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @cat %> |

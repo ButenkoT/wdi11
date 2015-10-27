@@ -1,0 +1,71 @@
+
+body{
+  background: pink;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.5em;
+}
+
+
+.main{
+  background: rgb(249, 242, 214) ;
+  max-width: 45em;
+  margin: auto;
+  margin-top: 0.6em;
+  margin-bottom: 1.2em;
+  padding: 1.5em;
+  border: 2px solid black;
+  box-shadow: 5px 5px 10px black;
+}
+
+.logo img{
+  position: absolute;
+  top: 1em;
+  left: 10em;
+  width: 7em;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  text-shadow: 1px 1px 1px green;
+}
+
+a:hover{
+  color: red;
+}
+
+nav{
+  padding-right: 0.5em;
+  text-align: right;
+}
+
+nav li{
+  display: inline-block;
+  margin-right: 0.6em;
+}
+
+h1{
+  text-align: center;
+}
+
+ul{
+  list-style: none;
+}
+
+.cats_table img{
+  display: inline-block;
+  width: 19em;
+}
+
+.cats_table li{
+  margin: 2em 0;
+}
+
+.cats_table section{
+  max-width: 23em;
+  display: inline-block;
+  margin-left: 0.5em;
+}
+

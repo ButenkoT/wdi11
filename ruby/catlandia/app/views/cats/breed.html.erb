@@ -1,0 +1,20 @@
+<nav>
+  <ul>
+    <li><%= link_to 'Home', cats_path %></li>
+    <li><%= link_to 'Add Kitty', new_cat_path %></li>
+  </ul>
+</nav>
+
+<h1>Kittyz kinds</h1>
+
+<ul class="cats_breed">
+
+    <% @cats.each do |cat| %>
+
+      <li>
+        <p><%= link_to cat.breed, cat %></p>
+      </li>
+
+    <% end %>
+
+</ul>

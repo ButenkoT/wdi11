@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+<div class="logo">
+  <%= image_tag('http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/pink-jelly-icons-animals/014197-pink-jelly-icon-animals-animal-cat-print.png') %>
+</div>
+<nav>
+  <ul>
+    <li><%= link_to 'Home', cats_path %></li>
+    <li><%= link_to 'Breeds', cats_breed_path %></li>
+    <li><%= link_to 'Add Kitty', new_cat_path %></li>
+  </ul>
+</nav>
+
+<h1>Purrfect Kittiz</h1>
+
+<ul class="cats_table">
+
+    <% @cats.each do |cat| %>
+      <li>
+        <%= image_tag(cat.image) %>
+        <section>
+          <p>Breed: <%= link_to cat.breed, cat %></p>
+          <p>Origin: <%= cat.origin %></p>
+          <p>Description: <%= cat.description %></p>
+          <td><%= link_to 'Edit', edit_cat_path(cat) %></td>
+          <td><%= link_to 'Destroy', cat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </section>
+      </li>
+    <% end %>
+
+</ul>

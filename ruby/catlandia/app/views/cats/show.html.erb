@@ -1,0 +1,31 @@
+<nav>
+  <ul>
+    <li><%= link_to 'Home', cats_path %></li>
+    <li><%= link_to 'Breeds', cats_breed_path %></li>
+    <li><%= link_to 'Add Kitty', new_cat_path %></li>
+  </ul>
+</nav>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Breed:</strong>
+  <%= @cat.breed %>
+</p>
+
+<p>
+  <strong>Origin:</strong>
+  <%= @cat.origin %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag(@cat.image) %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @cat.description %>
+</p>
+
+<%= link_to 'Edit', edit_cat_path(@cat) %>
