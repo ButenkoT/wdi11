@@ -25,6 +25,10 @@ class CatsController < ApplicationController
     @cats = Cat.all
   end
 
+  def origin
+    @cats = Cat.all
+  end
+
   # POST /cats
   # POST /cats.json
   def create

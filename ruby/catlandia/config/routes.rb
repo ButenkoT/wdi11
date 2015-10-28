@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
+  root :to => 'cats#index'
+
   get 'cats/breed' => 'cats#breed'
+  get 'cats/origin' => 'cats#origin'
+
   resources :cats
 
 

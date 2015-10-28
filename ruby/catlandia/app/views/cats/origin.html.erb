@@ -1,7 +1,6 @@
 <nav>
   <ul>
     <li><%= link_to 'Home', cats_path %></li>
-    <li><%= link_to 'Origin', cats_origin_path %></li>
     <li><%= link_to 'Add Kitty', new_cat_path %></li>
   </ul>
 </nav>
@@ -13,7 +12,7 @@
     <% @cats.each do |cat| %>
 
       <li>
-        <p><%= link_to cat.breed, cat %></p>
+        <p><%= link_to cat.origin, cat %></p>
       </li>
 
     <% end %>
