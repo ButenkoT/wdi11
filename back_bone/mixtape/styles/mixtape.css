@@ -1,0 +1,11 @@
+.song .editing{
+  display: none;
+}
+
+.song.mode-editing .viewing{
+  display: none;
+}
+
+.song.mode-editing .editing{
+  display: inline-block;
+}
