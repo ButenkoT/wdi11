@@ -15,6 +15,8 @@
     <div class="song-list">
       <div class="song"></div>
     </div>
+
+    <div class="song-lyrics"></div>
   </div>
 
   <script type="text/template" id="song-template">
@@ -23,6 +25,7 @@
       <b>Song:</b> <%= name %>
       <span class="buttons">
         <button class="edit-song">Edit</button>
+        <button class="show-lyrics">Lyrics</button>
         <button class="remove-song">&cross;</button>
       </span>
     </div>
@@ -34,6 +37,18 @@
     </div>
   </script>
 
+  <script type="text/template" id="song-lyrics-template">
+    <div class="viewing">
+      <b>Artist:</b> <%= artist %>
+      <b>Song:</b> <%= name %>
+      <span class="buttons">
+        <button class="edit-song">Edit</button>
+        <button class="show-lyrics">Lyrics</button>
+        <button class="remove-song">&cross;</button>
+      </span>
+    </div>
+  </script>
+
   <script src="scripts/jquery-min.js"></script>
   <script src="scripts/underscore-min.js"></script>
   <script src="scripts/backbone-min.js"></script>
@@ -41,6 +56,8 @@
   <script src="src/collections/songlist.js"></script>
   <script src="src/views/songView.js"></script>
   <script src="src/views/songListView.js"></script>
+  <script src="src/views/songLyricsView.js"></script>
+  <script src="src/routers/router.js"></script>
   <script src="src/mixtape.js"></script>
 </body>
 </html>

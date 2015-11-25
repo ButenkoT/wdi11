@@ -12,7 +12,7 @@ $(document).ready(function(){
 
   songList = new mixtape.SongList([song, song2]);
   mixtapeView = new mixtape.MixtapeView(songList);
-  mixtapeView.render();
+  // mixtapeView.render();
 
   // var songView = new mixtape.SongView({
   //  model: song,
@@ -20,6 +20,9 @@ $(document).ready(function(){
   // });
 
   // songView.render();
+
+  mixtape.router = new mixtape.Router();
+  Backbone.history.start();
 
 });
 

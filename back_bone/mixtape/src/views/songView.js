@@ -10,6 +10,7 @@ mixtape.SongView = Backbone.View.extend({
   events: {
     "click .save-song": "onSave",
     "click .viewing": "onEdit",
+    "click .show-lyrics": "onShowLyrics",
     "click .remove-song": "onRemoveSong"
   },
 
@@ -47,6 +48,10 @@ mixtape.SongView = Backbone.View.extend({
   onEdit: function() {
     this.$el.addClass("mode-editing");
     this.$(".name-input").focus();
+  },
+
+  onShowLyrics: function() {
+    this.model
   },
 
   onRemoveSong: function(){
